@@ -52,7 +52,7 @@ function severalCountries(countries) {
     .forEach(c => countryList.insertAdjacentHTML('beforeend', c));
 }
 function showInfo(countries) {
-  country = countries[0];
+  let country = countries[0];
   if (country.name.common === 'Russia') {
     clear();
     Notiflix.Notify.info('Слава Україні');
